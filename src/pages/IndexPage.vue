@@ -26,16 +26,13 @@ let onUploadClick = () => {
 
 <template>
   <div class="flex flex-col items-center">
+    <div class="text-2xl flex flex-row items-center">
+      <router-link to="/filemanage" class="link-hint">{{ $t("index.file_control") }}</router-link>
+    </div>
     <div class="pannel file-pannel">
-      <div class="text-2xl flex flex-row items-center">
-        <router-link to="/filemanage" class="link-hint">{{ $t("index.file_channel_title") }}</router-link>
-      </div>
       <div class="upload-area" @click="onUploadClick"></div>
     </div>
     <div class="pannel clip-pannel">
-      <div class="text-2xl flex flex-row items-center">
-        <router-link to="/filemanage" class="link-hint">{{ $t("index.clip_channel_title") }}</router-link>
-      </div>
       <div class="clip-area" @click="onClipAreaClick"></div>
     </div>
     <!-- <div class="pannel tips-pannel">{{ $t("index.tips_content") }}</div> -->
