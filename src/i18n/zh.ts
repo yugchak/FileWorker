@@ -6,6 +6,7 @@ export default {
         save: '保存',
     },
     index: {
+        file_control: '文件管理',
         file_channel_title: '文件',
         clip_channel_title: '剪贴板',
         tips_content: '直接粘贴/拖动试试'
