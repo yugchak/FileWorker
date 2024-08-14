@@ -96,7 +96,10 @@ onUnmounted(() => {
 
 <template>
   <div class="flex flex-col items-center">
-    <div class="text-2xl flex flex-row items-center">
+    <div class="text-2xl flex flex-row items-center mg-t-1">
+      <router-link to="/" class="link-hint">{{ $t("index.file_main") }}</router-link>
+    </div>
+    <div class="text-2xl flex flex-row items-center mg-t-1">
       <router-link to="/filemanage" class="link-hint">{{ $t("index.file_control") }}</router-link>
     </div>
     <div class="file-area flex flex-col mt-4">
@@ -180,6 +183,21 @@ body,
   --uno: h-50 border-dashed border-2 cursor-pointer;
   background: url(../assets/upload.svg) center center no-repeat;
   background-color: white;
+}
+
+.link-hint {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #a0aec0;
+  text-underline-offset: 0.2em;
+}
+
+.link-hint:hover {
+  text-decoration-color: black;
+}
+
+.mg-t-1 {
+  margin-top: 1rem;
 }
 
 @keyframes spin {
