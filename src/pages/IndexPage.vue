@@ -32,7 +32,7 @@ let onUploadClick = () => {
     <div class="pannel clip-pannel">
       <div class="clip-area" @click="onClipAreaClick"></div>
     </div>
-    <div class="text-2xl flex flex-row items-center mg-b-1">
+    <div class="text-2xl flex flex-row items-center mg-t-1">
       <router-link to="/filemanage" class="link-hint">{{ $t("index.file_control") }}</router-link>
     </div>
     <!-- <div class="pannel tips-pannel">{{ $t("index.tips_content") }}</div> -->
@@ -89,7 +89,7 @@ let onUploadClick = () => {
   border-radius: 6px;
   padding: 2px 4px;
 }
-.mg-b-1 {
+.mg-t-1 {
   margin-bottom: 1rem;
 }
 </style>
