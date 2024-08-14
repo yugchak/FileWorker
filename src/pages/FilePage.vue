@@ -96,6 +96,9 @@ onUnmounted(() => {
 
 <template>
   <div class="flex flex-col items-center">
+    <div class="text-2xl flex flex-row items-center">
+      <router-link to="/filemanage" class="link-hint">{{ $t("index.file_control") }}</router-link>
+    </div>
     <div class="file-area flex flex-col mt-4">
       <div class="files" @click="requestUploadFile" ref="fileUploadArea">
         <input ref="fileUploadInput" type="file" class="hidden" multiple />
