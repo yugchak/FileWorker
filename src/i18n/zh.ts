@@ -6,6 +6,7 @@ export default {
         save: '保存',
     },
     index: {
+        file_main: '首页',
         file_control: '文件管理',
         file_channel_title: '文件',
         clip_channel_title: '剪贴板',
