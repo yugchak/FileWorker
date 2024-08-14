@@ -92,6 +92,12 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="flex flex-col items-center">
+    <div class="text-2xl flex flex-row items-center mg-t-1">
+      <router-link to="/" class="link-hint">{{ $t("index.file_main") }}</router-link>
+    </div>
+    <div class="text-2xl flex flex-row items-center mg-t-1">
+      <router-link to="/filemanage" class="link-hint">{{ $t("index.file_control") }}</router-link>
+    </div>
     <div class="text-area flex flex-col mt-4">
       <div class="header p-2 flex flex-row items-center">
         <input class="filename-input monospace" type="text" v-model="filename" :placeholder="$t('common.filename')" />
@@ -192,5 +198,20 @@ body,
 .save-attention {
   --uno: i-mdi-circle-small w-8 h-8 ml-auto;
   color: #1f883d !important;
+}
+  
+.link-hint {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: #a0aec0;
+  text-underline-offset: 0.2em;
+}
+
+.link-hint:hover {
+  text-decoration-color: black;
+}
+
+.mg-t-1 {
+  margin-top: 1rem;
 }
 </style>
