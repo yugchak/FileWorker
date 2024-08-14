@@ -35,6 +35,9 @@ const onDeleteFileClick = async (key?: string) => {
 <template>
     <div class="flex flex-col items-center mt-5">
         <h1 class="text-lg">{{ $t("page_title.filemanage") }}</h1>
+        <div class="flex flex-row items-center mg-t-1">
+          <router-link to="/" class="link-hint">{{ $t("index.file_main") }}</router-link>
+        </div>
         <div class="px-4 py-4 max-w-screen-md w-4/5">
             <div v-for="file in uploadedFiles" :key="file.Key"
                 class="w-full flex flex-row items-center mt-4 rounded border-1 border-gray-300 px-2 py-1">
@@ -62,5 +65,8 @@ body,
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+.mg-t-1 {
+    margin-top: 1rem;
 }
 </style>
