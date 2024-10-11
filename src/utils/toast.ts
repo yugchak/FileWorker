@@ -23,7 +23,7 @@ export function toast(message: string, type = 'info') {
     text: message,
     duration: 2000,
     close: false,
-    position: 'center',
+    position: 'left',
     style: {
       borderRadius: '5px',
       background: theme.background || '#ffffff',
